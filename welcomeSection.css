@@ -1,0 +1,49 @@
+.welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 5rem 0 5rem;
+
+  p {
+    text-align: justify;
+    font-size: 17px;
+    font-weight: 400;
+  }
+
+  img {
+    width: 20%;
+    height: auto;
+    float: right;
+    margin-left: 1rem;
+  }
+
+  button {
+    margin-top: 2rem;
+    padding: 1rem 2rem 1rem 2rem;
+    background-color: transparent;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 1024px) {
+  .welcome {
+    padding: 0;
+
+    p {
+      font-size: 15px;
+    }
+
+    img {
+      margin-left: 1rem;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .welcome {
+    img {
+      width: 40%;
+    }
+  }
+}
